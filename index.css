@@ -8,10 +8,11 @@
 }
 
 body {
-    background: #1f242d
+    background: #1f242d;
+    color: white;
 }
 
-.header {
+.headerContainer {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,5 +27,61 @@ body {
 
 .logo {
     font-size: 25px;
-    color: #7832A8;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
 }
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .4s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(255, 115, 255);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10% 0;
+
+}
+
+.home-img img{
+    max-width: 450px;
+    border-radius: 250px;
+ }
+
+ .home-content {
+    max-width: 600px;
+ }
+
+ .home-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+ }
+
+ .home-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin: -3px 0;
+ }
+
+ .home-content h3 span {
+    color: #fb63ee;
+ }
+
+ .home-content h3:nth-of-type(2){
+    margin-bottom: 10px;
+ }
