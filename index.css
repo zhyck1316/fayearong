@@ -12,6 +12,16 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar{
+    display: none ;
+}
+
+.about{
+    background: white;
+    height: 100vh;
+    width: 100%;
+}
+
 .headerContainer {
     position: fixed;
     top: 0;
@@ -31,15 +41,22 @@ body {
     text-decoration: none;
     font-weight: 600;
     cursor: default;
+    opacity: 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: .2s;
 }
 
 .navbar a {
+    display: inline-block;
     font-size: 18px;
     color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .4s;
+    transition: 1s ease-in;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover,
@@ -61,6 +78,9 @@ body {
 .home-img img{
     max-width: 450px;
     border-radius: 250px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: .5s;
  }
 
  .home-content {
@@ -70,6 +90,9 @@ body {
  .home-content h3 {
     font-size: 28px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
  }
 
  .home-content h1{
@@ -84,8 +107,88 @@ body {
 
  .home-content h3:nth-of-type(2){
     margin-bottom: 10px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
  }
 
  .home-content p {
     font-size: 16px;
+    margin-bottom: 15px;
+ }
+
+ .social-media a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: 2px solid #fb63ee;
+    border-radius: 50%;
+    font-size: 20px;
+    color:rgb(255, 115, 255);
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px 25px 0;
+    transition: 2s ease;
+ }
+
+ .social-media a:hover{
+    background: #fb63ee;
+    color: grey;
+    box-shadow: 0 0 25px #fb63ee;
+
+ }
+ .btn {
+    border: 2px solid #fb63ee;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 12px 28px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    color: #fb63ee;
+    transition: 2;
+ }
+
+ .btn:hover{
+    background:rgb(255, 115, 255);
+    box-shadow: 0 0 20px #fb63ee;
+    color:white;
+    font-weight: 500;
+ }
+
+ 
+ /* KEYFRAME ANIMATIONS */
+
+ @keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+ }
+
+ @keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+ }
+
+ @keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
  }
