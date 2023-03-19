@@ -42,7 +42,7 @@ body {
     font-weight: 600;
     cursor: default;
     opacity: 0;
-    animation: slideRight .5s ease forwards;
+    animation: slideRight 2s ease forwards;
     animation-delay: .2s;
 }
 
@@ -55,7 +55,7 @@ body {
     margin-left: 35px;
     transition: 1s ease-in;
     opacity: 0;
-    animation: slideTop .5s ease forwards;
+    animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
 
@@ -79,7 +79,7 @@ body {
     max-width: 450px;
     border-radius: 250px;
     opacity: 0;
-    animation: slideTop .5s ease forwards;
+    animation: slideTop 2s ease forwards;
     animation-delay: .5s;
  }
 
@@ -91,7 +91,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     opacity: 0;
-    animation: slideBottom 1s ease forwards;
+    animation: slideBottom 2s ease forwards;
     animation-delay: .7s;
  }
 
@@ -108,13 +108,16 @@ body {
  .home-content h3:nth-of-type(2){
     margin-bottom: 10px;
     opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: .7s;
+    animation: slideTop 2.5s ease forwards;
+    animation-delay: .8s;
  }
 
  .home-content p {
     font-size: 16px;
     margin-bottom: 15px;
+    animation: slideLeft 3s ease forwards;
+    animation-delay: .8s;
+    opacity: 0;
  }
 
  .social-media a {
@@ -130,6 +133,9 @@ body {
     justify-content: center;
     margin: 10px 20px 25px 0;
     transition: 2s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc( .5s * var(--i));
  }
 
  .social-media a:hover{
@@ -157,7 +163,24 @@ body {
     font-weight: 500;
  }
 
- 
+ .about-content {
+    max-width: 100%;
+ }
+ .about-content h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1f242d;
+    padding: 50px 0 0 10%;
+ }
+
+ .about-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1f242d;
+    padding: 0px 10%;
+ }
+
+
  /* KEYFRAME ANIMATIONS */
 
  @keyframes slideTop {
@@ -189,6 +212,17 @@ body {
     }
     100%{
         transform: translateY(0);
+        opacity: 1;
+    }
+ }
+
+ @keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
         opacity: 1;
     }
  }
