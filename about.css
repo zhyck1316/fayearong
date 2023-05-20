@@ -18,8 +18,12 @@ body {
 
 .about{
     background: white;
-    height: 200vh;
+    height: 100vh;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: center; */
+    display: flex;
 }
 
 .headerContainer {
@@ -45,6 +49,11 @@ body {
     animation: slideRight 2s ease forwards;
     animation-delay: .2s;
 }
+
+.logo:hover{
+    text-shadow: 0 0 20px #1f242d;
+ }
+
 .arong{
     color:#fb63ee;
 }
@@ -71,23 +80,54 @@ body {
     text-shadow: 0 0 30px #1f242d;
 }
 
- .about-content {
-    max-width: 100%;
+ .about-content { 
+    max-width: 50%;
  }
  .about-content h2{
     font-size: 30px;
     font-weight: 600;
     color: #1f242d;
-    padding: 50px 0 0 10%;
  }
 
  .about-content p{
     font-size: 20px;
     font-weight: 400;
     color: #1f242d;
-    padding: 0px 10%;
  }
 
+ .about-img img{
+    width: 25%;
+    border-radius: 100%;
+    /* margin: 200px 0 0 0; */
+    justify-content: center;
+    align-content: center;
+    display: flexbox;
+ }
+
+ .about-img{
+    
+ }
+
+ /* SVG DIVIDER */
+ .custom-shape-divider-bottom-1681547667 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681547667 svg {
+    position: relative;
+    display: block;
+    width: calc(177% + 1.3px);
+    height: 200%;
+}
+
+.custom-shape-divider-bottom-1681547667 .shape-fill {
+    fill: #384151;
+}
  /* KEYFRAME ANIMATIONS */
 
  @keyframes slideTop {

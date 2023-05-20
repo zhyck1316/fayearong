@@ -17,8 +17,8 @@ body {
 }
 
 .about{
-    background: #1f242d;
-    height: 100vh;
+    background: white;
+    height: 200vh;
     width: 100%;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .logo {
     font-size: 25px;
-    color: wheat;
+    color: #1f242d;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -52,7 +52,7 @@ body {
 .navbar a {
     display: inline-block;
     font-size: 18px;
-    color: #ffffff;
+    color: #1f242d;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -68,7 +68,7 @@ body {
 }
 
 .navbar a:hover{
-    text-shadow: 0 0 25px #fb63ee;
+    text-shadow: 0 0 30px #1f242d;
 }
 
  .about-content {
@@ -88,26 +88,6 @@ body {
     padding: 0px 10%;
  }
 
- /* SVG DIVIDER */
- .custom-shape-divider-top-1681547520 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1681547520 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 500px;
-}
-
-.custom-shape-divider-top-1681547520 .shape-fill {
-    fill: #384151;
-}
  /* KEYFRAME ANIMATIONS */
 
  @keyframes slideTop {

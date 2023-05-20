@@ -35,6 +35,10 @@ body {
     z-index: 100;
 }
 
+.arong{
+   color: #fb63ee;
+}
+
 .logo {
     font-size: 25px;
     color: white;
@@ -46,6 +50,10 @@ body {
     animation-delay: .2s;
 }
 
+.logo:hover{
+   text-shadow: 0 0 30px wheat;
+}
+
 .navbar a {
     display: inline-block;
     font-size: 18px;
@@ -53,7 +61,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: 1s ease-in;
+    transition: 500ms ease-in;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
@@ -62,6 +70,9 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: rgb(255, 115, 255);
+}
+.navbar a:hover{
+   text-shadow: 0 0 30px white;
 }
 
 .home {
@@ -174,23 +185,34 @@ body {
     font-weight: 500;
  }
 
- .experience-content{
-    max-width: 100%;
+ footer{
+   height: 50vh;
+   width: 100%;
+   background:#1f242d;
  }
 
- .experience-content h1{
-    font-size: 30px;
-    font-weight: 600;
-    color: #fb63ee;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0 0 0;
- }
- 
+ /* SVG CSS */
 
+ .custom-shape-divider-bottom-1681498164 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1681498164 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 163px;
+}
 
+.custom-shape-divider-bottom-1681498164 .shape-fill {
+   fill: #51384d;
+}
 
  /* KEYFRAME ANIMATIONS */
 
